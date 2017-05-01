@@ -1,0 +1,3 @@
+Pages:
+- index.html --> Landing Page
+- Register.html --> Registration Form Page
