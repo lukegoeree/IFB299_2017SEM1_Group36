@@ -1,1 +1,0 @@
-source images are to be placed in this folder

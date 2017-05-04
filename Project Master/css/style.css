@@ -1,112 +1,13 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  height: 100%;
+/* YOUR CUSTOM STYLES */
+.list-group-item.active {
+    background-color: #2bbbad;
+    border-color:#fff
 }
 
-body {
-  margin: 0;
+.list-group-item:not(.active) {
+    color:#fff;
 }
 
-.container{
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	
-	overflow: hidden;
-	padding-right: 15px;
-	padding-left: 15px;
+.list-group-item:not(.active):hover {
+    color:#000;
 }
-
-.form_container{
-
-	display: flex;
-	overflow: hidden;
-	padding-right: 15px;
-	padding-left: 15px;
-	max-width: 200px;
-	height: 100%;
-	border-right: 2px solid grey; 
-	background-color: #cecece;
-	
-}
-
-.form_test{
-	max-width: 150px;
-	height: 300px;
-	width: 150px;
-	background-color: red;
-	margin: 0;
-	border: 2px solid black;
-}
-.navbar {
-	position: relative;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	padding: 0.5rem 1rem;
-	background-color: #3f485a;
-}
-
-.navbar-brand {
-	display: block;
-	padding-top: 1.5em;
-	padding-bottom: 1em;
-	margin-right: 10em;
-	font-size: 1.5rem;
-	white-space: nowrap;
-	color: white;
-	text-align: left;
-	text-decoration: none;
-	font-size: 1em;
-}
-
-.nav-links{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 10px 16px;
-	text-decoration: none;
-	font-size: 1em;
-}
-
-.navbar .nav-item{
-	float: left;
-	list-style-type: none;
-}
-
-.navbar .nav-item.active{
-	background-color: rgba(0, 204, 255, 0.3);
-}
-
-.navbar .nav-links:hover{
-	color: #33d6ff;
-}
-
-
-footer.page-footer {
-	position: absolute;
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: #3E4551;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  color: #fff; }
-  footer.page-footer .footer-copyright {
-    overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center; }
-  footer.page-footer a {
-    color: #fff; }
-

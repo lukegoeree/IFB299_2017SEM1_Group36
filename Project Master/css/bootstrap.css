@@ -3172,7 +3172,7 @@ tbody.collapse.show {
   color: #292b2c;
   text-align: left;
   list-style: none;
-  background-color: #ff00ff;
+  background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -3831,7 +3831,7 @@ tbody.collapse.show {
 }
 
 .nav-link:focus, .nav-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav-link.disabled {
@@ -3865,8 +3865,8 @@ tbody.collapse.show {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #ff00ff;
-  background-color: #ff00ff;
+  color: #464a4c;
+  background-color: #fff;
   border-color: #ddd #ddd #fff;
 }
 
@@ -3978,7 +3978,7 @@ tbody.collapse.show {
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .navbar-toggler-icon {
@@ -5121,23 +5121,23 @@ a.badge:focus, a.badge:hover {
 
 .list-group-item-action {
   width: 100%;
-  color: #464a4c;
+  color: #fff;
   text-align: inherit;
 }
 
 .list-group-item-action .list-group-item-heading {
-  color: #292b2c;
+  color: #fff;
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover {
-  color: #464a4c;
+  color: #fff;
   text-decoration: none;
-  background-color: #f7f7f9;
+  background-color: #fff;
 }
 
 .list-group-item-action:active {
-  color: #292b2c;
-  background-color: #eceeef;
+  color: #fff;
+  background-color: #3973ac;
 }
 
 .list-group-item {
@@ -5155,7 +5155,7 @@ a.badge:focus, a.badge:hover {
           align-items: center;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fff;
+  background-color: #e3e6e8;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -5191,8 +5191,8 @@ a.badge:focus, a.badge:hover {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: #3973ac;
+  border-color: #3973ac;
 }
 
 .list-group-item.active .list-group-item-heading,
