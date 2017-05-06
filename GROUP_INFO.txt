@@ -1,0 +1,22 @@
+# IFB299_2017SEM1_Group36
+Project Repository
+
+Group/Company Name: Group 3 6 Development
+
+Project Name:	Find A Castle!
+
+SCRUM Members/Roles:
+Luke Goeree:	- SCRUM Master
+		- Developer
+		- Lead Design
+		- DB Administrator
+
+Jamie Wright:	- Product Owner
+		- Developer
+		- Lead Relations
+		- User Experience Expert
+
+Harry Aung:	- Business Owner
+		- Client
+		- Developer
+		- Lead Test
