@@ -2769,30 +2769,30 @@ fieldset[disabled] a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #5cb85c;
+  background-color: #3973ac;
+  border-color: #3973ac;
 }
 
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
+  background-color: #fff;
   border-color: #419641;
 }
 
 .btn-success:focus, .btn-success.focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
-          box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn-success.disabled, .btn-success:disabled {
-  background-color: #5cb85c;
+  background-color: #fff;
   border-color: #5cb85c;
 }
 
 .btn-success:active, .btn-success.active,
 .show > .btn-success.dropdown-toggle {
   color: #fff;
-  background-color: #449d44;
+  background-color: #fff;
   background-image: none;
   border-color: #419641;
 }
@@ -5499,6 +5499,8 @@ button.close {
           justify-content: space-between;
   padding: 15px;
   border-bottom: 1px solid #eceeef;
+  background-color: #3973ac;
+  color: #fff;
 }
 
 .modal-title {
@@ -9316,5 +9318,33 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important;
   }
+}
+
+.glyphicon {
+  position: relative;
+  top: 0.0em;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+.glyphicon-pencil:before {
+  content: "\270f";
 }
 /*# sourceMappingURL=bootstrap.css.map */

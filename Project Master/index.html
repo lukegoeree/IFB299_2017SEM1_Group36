@@ -69,7 +69,7 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Sign In</a>
+                            <a class="nav-link" id="signin">Sign In</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Register</a>
@@ -115,12 +115,12 @@
                                 <div class="md-form">
                                     <i class="fa fa-user prefix"></i>
                                     <input type="text" id="form1" class="form-control">
-                                    <label for="form1">Your name</label>
+                                    <label for="form1"><span class="glyphicon glyphicon-pencil"></span>Your name</label>
                                 </div>
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
                                     <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Your email</label>
+                                    <label for="form2"><span class="glyphicon glyphicon-envelope"></span>Your email</label>
                                 </div>
                                 <button class="btn btn-default">Submit</button>
 
@@ -328,7 +328,40 @@
 
             </div>
         </div>
-        <!--/.Main layout-->
+
+         <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>LOGIN</h4>             
+                    </div>
+                    <!--End Modal Header-->
+
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname">Username:</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Email">
+                            </div>
+                            <!--Username-->
+                            <div class="form-group">
+                                <label for="usrname">Password:</label>
+                                <input type="password" class="form-control" id="psw" placeholder="Enter Password">
+                            </div>
+                            <!--Password-->
+                            <button type="submit" class="btn btn-default btn-block">Login</button>
+                        </form>
+                    </div>
+                    <!--End Modal Body-->
+                </div>
+                <!--End Modal Content-->
+            </div>
+            <!--End Modal Dialog-->
+        </div>
+        <!--End Modal-->
+
+
 
     </main>
 
@@ -352,12 +385,12 @@
 
                 <!--Second column-->
                 <div class="col-lg-2 col-md-4 offset-lg-1">
-                    <h5 class="title">First column</h5>
+                    <h5 class="title">Offices</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Brisbane</a></li>
+                        <li><a href="#!">Melbourne</a></li>
+                        <li><a href="#!">Sydney</a></li>
+                        <li><a href="#!">Perth</a></li>
                     </ul>
                 </div>
                 <!--/.Second column-->
@@ -366,12 +399,12 @@
 
                 <!--Third column-->
                 <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Second column</h5>
+                    <h5 class="title">Contact</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Head Office</a></li>
+                        <li><a href="#!">Sales</a></li>
+                        <li><a href="#!">Rentals</a></li>
+                        <li><a href="#!">Owners</a></li>
                     </ul>
                 </div>
                 <!--/.Third column-->
@@ -380,12 +413,12 @@
 
                 <!--Fourth column-->
                 <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Third column</h5>
+                    <h5 class="title">Legalities</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Contracts</a></li>
+                        <li><a href="#!">RTA</a></li>
+                        <li><a href="#!">Bonds</a></li>
+                        <li><a href="#!">T/C's</a></li>
                     </ul>
                 </div>
                 <!--/.Fourth column-->
@@ -425,6 +458,25 @@
     
     <script>
     new WOW().init();
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#signin").click(function(){
+                $("#myModal").modal();
+            });
+        });
     </script>
 
 </body>
