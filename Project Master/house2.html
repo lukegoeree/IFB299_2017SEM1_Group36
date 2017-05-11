@@ -69,7 +69,7 @@
                             <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Sign In</a>
+                            <a class="nav-link" id="signin">Sign In</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Register</a>
@@ -95,48 +95,50 @@
 					<div class="house1">
 						<h1>Available for Rent Now!</h1>
 						</br>
-						<img src="img/homes/home1.jpg" class="hoverable" width="800" height="600" />
+						<img src="img/homes/home2.jpg" class="hoverable" width="800" height="600" />
 						
                             <div class ="row">
 								<div class="col-lg-1">
 									<img src="img/icons/car_icon.png" width = "20" height="20" />
-									<h5> 1 </h5>
-								</div>
-								<div class="col-lg-1">
-									<img src="img/icons/bed_icon.png" width = "20" height="20" />
 									<h5> 2 </h5>
 								</div>
 								<div class="col-lg-1">
-									<img src="img/icons/shower_icon.png" width = "20" height="20" />
+									<img src="img/icons/bed_icon.png" width = "20" height="20" />
 									<h5> 4 </h5>
+								</div>
+								<div class="col-lg-1">
+									<img src="img/icons/shower_icon.png" width = "20" height="20" />
+									<h5> 5 </h5>
 								</div>
 							</div>
 
-						<h3>$450 per week </h3>	
+						<h3>$1600 per week </h3>	
                         </br>
-                        <p>This much loved home is ready for a new family to add their personal touch!</p>
+                        <p>This fabulous fully furnished home has it all, situated in the gated community within Brisbane.</p>
                         <p>Here's your opportunity to move into Brisbanes best suburb.</p>		
                         </br>
-                        <p> The leafy streets, excellent schools and central location are all the reasons</p>
-                        <p> this suburb is highly sought after.</p>
-                        </br>
-                        <p> This four bedroom two story home is ideal for those seeking convenient living in a</p>
-                        <p>family frindly location.</p>
-                        <p> Situated on the high side of the sreet with a lovely northerly aspect,</p>
-                        <p>this well proportioned residence has been freshly painted throughout and includes</p>
-                        <p> spacious living areas, large updated bathroom, hardwood flooring and lock up garage!</p>
+                        <p>From the minute you walk through the front door you will be in awe of this properties features, </p>
+                        <p>exceptional use of natural light as well as natural stone and timber fit out. Coupled with </p>
+						<p>privacy and your own private dock, the luxury lifestyle you are seeking has truly been catered for with this property.</>
                         </br>
                         </br>
                         <p> Features: </p>
-                        <li> Two story timber cladding </li>
-                        <li> 4 Solar Panels </li>
-                        <li> Fresh painting throughout interior </li>
-                        <li> Tinted window film to most living area windows </li>
-                        <li> Spacious lounge and dining </li>
-                        <li> Outside entertaining area </li>
+                        <li> 4 bedrooms </li>
+                        <li> 5 bathrooms </li>
+                        <li> 2 car garage and room for a buggy </li>
+                        <li> Huge master bedroom with deck and superb water views. Ensuite comprising of double vanity & double shower, spa bath, and separate toilet. Huge walk in robe and coffee station </li>
+                        <li> Home office with private access </li>
+                        <li> Back to base security system and panic buttons throughout </li>
+						<li> Media room with digital sound and snack bar! </li>
+						<li> Temperature controlled wine cellar </li>
+						<li> Tv lounge and bar </li>
+						<li> Formal dinging </li>
+						<li> Entertainers kitchen with butler's pantry, marble and stainless stell fittings </li>
+						<li> Alfresco entertaining area with BBQ and kitchenette </li>
+						<li> Tiled pool plus 8 meter long floating pontoon with direct ocean access </li>
                         </br>
-                        <p> Within close proximity to Brisbanes best educational facilities, easy access to parks</p>
-                        <p> and entertainment district </p>			
+                        <p> The residence is a large resort styled suburb.  THe suburb is a well-knonw tourism destination.</p>
+                        <p> Everything within easy reach! </p>			
 					</div>
                     <!--/.First row-->
                     <br>
@@ -144,7 +146,37 @@
 
         </div>
         <!--/.Main layout-->
+         <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>LOGIN</h4>             
+                    </div>
+                    <!--End Modal Header-->
 
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname">Username:</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Email">
+                            </div>
+                            <!--Username-->
+                            <div class="form-group">
+                                <label for="usrname">Password:</label>
+                                <input type="password" class="form-control" id="psw" placeholder="Enter Password">
+                            </div>
+                            <!--Password-->
+                            <button type="submit" class="btn btn-default btn-block">Login</button>
+                        </form>
+                    </div>
+                    <!--End Modal Body-->
+                </div>
+                <!--End Modal Content-->
+            </div>
+            <!--End Modal Dialog-->
+        </div>
+        <!--End Modal-->
     </main>
 
     <!--Footer-->
@@ -159,7 +191,7 @@
                     <h5 class="title">ABOUT FIND A CASTLE!</h5>
                     <p>"Find A Castle!" is the go to page for finding a rental property across Australia.</p>
 
-                    <p>"Find A Castle!" is powered by Bootsrap.css and designed by Group 3 6 Web Development</p>
+                    <p>"Find A Castle!" is powered by Bootsrap.css and designed by Group 3 6 Development</p>
                 </div>
                 <!--/.First column-->
 
@@ -167,12 +199,12 @@
 
                 <!--Second column-->
                 <div class="col-lg-2 col-md-4 offset-lg-1">
-                    <h5 class="title">First column</h5>
+                    <h5 class="title">Offices</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Brisbane</a></li>
+                        <li><a href="#!">Melbourne</a></li>
+                        <li><a href="#!">Sydney</a></li>
+                        <li><a href="#!">Perth</a></li>
                     </ul>
                 </div>
                 <!--/.Second column-->
@@ -181,12 +213,12 @@
 
                 <!--Third column-->
                 <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Second column</h5>
+                    <h5 class="title">Contact</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Head Office</a></li>
+                        <li><a href="#!">Sales</a></li>
+                        <li><a href="#!">Rentals</a></li>
+                        <li><a href="#!">Owners</a></li>
                     </ul>
                 </div>
                 <!--/.Third column-->
@@ -195,12 +227,12 @@
 
                 <!--Fourth column-->
                 <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Third column</h5>
+                    <h5 class="title">Legalities</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#!">Contracts</a></li>
+                        <li><a href="#!">RTA</a></li>
+                        <li><a href="#!">Bonds</a></li>
+                        <li><a href="#!">T/C's</a></li>
                     </ul>
                 </div>
                 <!--/.Fourth column-->
@@ -241,7 +273,24 @@
     <script>
     new WOW().init();
     </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#signin").click(function(){
+                $("#myModal").modal();
+            });
+        });
+    </script>
 </body>
 
 </html>
