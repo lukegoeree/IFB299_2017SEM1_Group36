@@ -1,578 +1,91 @@
-<!-- Modified last 6/5 by Luke -->
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<head>
+        <title>Find A Castle!</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <title>Find A Castle!</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet">
-    
-    <style rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.css" rel="stylesheet">
         
-        main {
-            padding-top: 3rem;
-            padding-bottom: 2rem;
-        }
-        
-        .widget-wrapper {
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 2rem;
-        }
-        
-        .extra-margins {
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
-        }
-        
-        .divider-new {
-            margin-top: 0;
-        }
-        
-          .navbar {
-            background-color: #343c4b;
-        }
-        
-        footer.page-footer {
-            background-color: #343c4b;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-
-<body>
-
-
-    <header>
-
-        <!--Navbar-->
-        <nav class="navbar navbar-toggleable-md navbar-dark">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">
-                    <img src="img/logo/site_logo.jpg" width="300" height="100" alt="Site Logo">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav1">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="signin">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="registration">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--/.Navbar-->
-
-    </header>
-
-    <main>
-
-        <!--Main layout-->
-        <div class="container">
-            <div class="row">
-
-                <!--Sidebar-->
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.2s">
-
-                    <div class="widget-wrapper">
-                        <h4>Categories:</h4>
-                        <br>
-                        <div class="list-group">
-                        <!-- .list-group-item  line 5143 -->
-                        <!-- .list-group-item.active line 5191 -->
-                            <a href="#" class="list-group-item active">Renting</a>
-                            <a href="#" class="list-group-item">Buying</a>
-                            <a href="#" class="list-group-item">Selling</a>
-                            <a href="#" class="list-group-item">News</a>
-                            <a href="#" class="list-group-item">Corporate</a>
-                        </div>
-                    </div>
-
-                    <div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
-                        <h4>Subscription form:</h4>
-                        <br>
-                        <div class="card">
-                            <div class="card-block">
-                                <p><strong>Subscribe to our newsletter</strong></p>
-                                <p>Subcribe now to receive our monthly newsletter with tips that will put you ahead of the curve in the real estate game.</p>
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix"></i>
-                                    <input type="text" id="form1" class="form-control">
-                                    <label for="form1"><span class="glyphicon glyphicon-pencil"></span>Your name</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix"></i>
-                                    <input type="text" id="form2" class="form-control">
-                                    <label for="form2"><span class="glyphicon glyphicon-envelope"></span>Your email</label>
-                                </div>
-                                <button class="btn btn-default">Submit</button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.Sidebar-->
-
-                <!--Main column-->
-                <div class="col-lg-8">
-
-                    <!--First row-->
-                    <div class="row wow fadeIn" data-wow-delay="0.4s">
-                        <div class="col-lg-12">
-                            <div class="divider-new">
-                                <h2 class="h2-responsive">What's new?</h2>
-                            </div>
-                            
-                            
-                            
-                            <!--Carousel Wrapper-->
-                            <div id="feature_carousel" class="carousel slide" data-ride="carousel">
-                                <!--Indicators-->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#feature_carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#feature_carousel" data-slide-to="1"></li>
-                                    <li data-target="#feature_carousel" data-slide-to="2"></li>
-                                    <li data-target="#feature_carousel" data-slide-to="3"></li>
-                                    <li data-target="#feature_carousel" data-slide-to="4"></li>
-                                    <li data-target="#feature_carousel" data-slide-to="5"></li>
-                                </ol>
-                                <!--/.Indicators-->
-                                  <!--Slides-->
-                                <div class="carousel-inner" role="listbox">
-                                    <!--First slide-->
-                                    <div class="carousel-item active">
-                                        <a href="house1.php">
-                                        <img src="img/homes/home1.jpg" width="800" height="600" alt="First slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Available for Rent Now!</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/First slide-->
-                                    <!--Second slide-->
-                                    <div class="carousel-item">
-                                        <a href="house2.php">
-                                        <img src="img/homes/home2.jpg" width="800" height="600" alt="Second slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Won't Last Long!</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/Second slide-->
-                                    <!--Third slide-->
-                                    <div class="carousel-item">
-                                        <a href="house3.php">
-                                        <img src="img/homes/home3.jpg" width="800" height="600" alt="Third slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Prime Position in Brisbane</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/Third slide-->
-                                    <!--Fourth slide-->
-                                    <div class="carousel-item">
-                                        <a href="house4.php">
-                                        <img src="img/homes/home4.jpg" width="800" height="600" alt="Fourth slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Available Next Week! Must Hurry!</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/Fourth slide-->
-                                    <!--Fifth slide-->
-                                    <div class="carousel-item">
-                                        <a href="house5.php">
-                                        <img src="img/homes/home5.jpg" width="800" height="600" alt="Fifth slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Prime Location!</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/Fifth slide-->
-                                    <!--Sixth slide-->
-                                    <div class="carousel-item">
-                                        <a href="house6.php">
-                                        <img src="img/homes/home6.jpg" width="800" height="600" alt="Sixth slide">
-                                        </a>
-                                        <div class="carousel-caption">
-                                            <h4><strong>Very Kid Friendly!</strong></h4>
-                                            <br>
-                                        </div>
-                                    </div>
-                                    <!--/Sixth slide-->
-                                </div>
-                                <!--/.Slides-->
-                                <!--Controls-->
-                                <a class="carousel-control-prev" href="#feature_carousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#feature_carousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                                <!--/.Controls-->
-                            </div>
-                            <!--/.Carousel Wrapper-->
-                        </div>
-                    </div>
-                    <!--/.First row-->
-                    <br>
-                    <hr class="extra-margins">
-
-                    <!--Second row-->
-                    <div class="row">
-                        <!--First columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card  wow fadeIn" data-wow-delay="0.2s">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="img/homes/article1.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article1.php">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title">The suburbs where prices are predicted to rise</h4>
-                                    <!--Text-->
-                                    <p class="card-text">House prices are predicted to rise in 29 Brisbane suburbs, with a surprising one-third coming out of one area alone.</p>
-                                    <!-- .btn-default { line 5342 mdb.css -->
-                                    <a href="article1.php" class="btn btn-default"><strong>READ NOW!</strong></a>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--First columnn-->
-
-                        <!--Second columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card  wow fadeIn" data-wow-delay="0.4s">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="img/homes/article2.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article2.php">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title">Brisbane house and unit prices tipped to go in opposite directions in 2017</h4>
-                                    <!--Text-->
-                                    <p class="card-text">The Brisbane housing market is expected to grow steadily in 2017, outperforming other capital cities hit hard by the drop in the national economy.</p>
-                                    <a href="article2.php" class="btn btn-default"><strong>READ NOW!</strong></a>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--Second columnn-->
-
-                        <!--Third columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card  wow fadeIn" data-wow-delay="0.6s">
-
-                                <!--Card image-->
-                                <div class="view overlay hm-white-slight">
-                                    <img src="img/homes/article3.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article3.php">
-                                        <div class="mask"></div>
-                                    </a>
-                                </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
-                                <div class="card-block">
-                                    <!--Title-->
-                                    <h4 class="card-title">Property market improving in Brisbane</h4>
-                                    <!--Text-->
-                                    <p class="card-text">It’s an even better time to own a house in Brisbane as it has just been dubbed the most stable city in Australia.</p>
-                                    <a href="article3.php" class="btn btn-default"><strong>READ NOW!</strong></a>
-                                </div>
-                                <!--/.Card content-->
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--Third columnn-->
-                    </div>
-                    <!--/.Second row-->
-
-                </div>
-                <!--/.Main column-->
-
-            </div>
-        </div>
-
-         <!-- Modal Login-->
-        <div class="modal fade" id="myModalSignIn" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>LOGIN</h4>             
-                    </div>
-                    <!--End Modal Header-->
-
-                    <div class="modal-body">
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usrname" placeholder="Enter Username">
-                            </div>
-                            <!--Username-->
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="psw" placeholder="Enter Password">
-                            </div>
-                            <!--Password-->
-                            <button type="submit" class="btn btn-default btn-block">Login</button>
-                        </form>
-                    </div>
-                    <!--End Modal Body-->
-                </div>
-                <!--End Modal Content-->
-            </div>
-            <!--End Modal Dialog-->
-        </div>
-        <!--End Modal-->
-
-         <!-- Modal Register-->
-        <form action="index.php" method="post">
-            <div class="modal fade" id="myModalReg" role="dialog">
+        <style rel="stylesheet">
             
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4>REGISTRATION</h4>             
-                        </div>
-                        <!--End Modal Header-->
-
-                        <div class="modal-body">
-                            <form role="form">
-                                <!--First Name-->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="fNameEntry" name="fname" placeholder="First Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="sNameEntry" name="lname" placeholder="Last Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="emailEntry" name="email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" id="contactNoEntry" name="phoneNum" placeholder="Contact Number">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="passwordEntry" name="pwd" placeholder="Enter Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="radio" name="priv" id="custTypeRenter" value="1" checked="checked"> Renter
-                                </div>
-                                <div class="form-group">
-                                    <input type="radio" name="priv" id="custTypeOwner" value="2"> Property Owner
-                                </div>
-                                <button type="submit" class="btn btn-default btn-block" name="submit" value="submit">Register</button>
-                            </form>
-                        </div>
-                        <!--End Modal Body-->
-                    </div>
-                    <!--End Modal Content-->
-                </div>
-                <!--End Modal Dialog-->
-                
-            </div>
-            <!--End Modal-->
-        </form>
-
-
-
-    </main>
-
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
-
-        <!--Footer Links-->
-        <div class="container-fluid">
-            <div class="row">
-
-                <!--First column-->
-                <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                    <h5 class="title">ABOUT FIND A CASTLE!</h5>
-                    <p>"Find A Castle!" is the go to page for finding a rental property across Australia.</p>
-
-                    <p>"Find A Castle!" is powered by Bootsrap.css and designed by Group 3 6 Development</p>
-                </div>
-                <!--/.First column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Second column-->
-                <div class="col-lg-2 col-md-4 offset-lg-1">
-                    <h5 class="title">Offices</h5>
-                    <ul>
-                        <li><a href="#!">Brisbane</a></li>
-                        <li><a href="#!">Melbourne</a></li>
-                        <li><a href="#!">Sydney</a></li>
-                        <li><a href="#!">Perth</a></li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Third column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Contact</h5>
-                    <ul>
-                        <li><a href="#!">Head Office</a></li>
-                        <li><a href="#!">Sales</a></li>
-                        <li><a href="#!">Rentals</a></li>
-                        <li><a href="#!">Owners</a></li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Fourth column-->
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="title">Legalities</h5>
-                    <ul>
-                        <li><a href="#!">Contracts</a></li>
-                        <li><a href="#!">RTA</a></li>
-                        <li><a href="#!">Bonds</a></li>
-                        <li><a href="#!">T/C's</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
-
-            </div>
-        </div>
-        <!--/.Footer Links-->
-
-        <hr>
-
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright: <a href="#"> WWW.FINDACASTLE.COM.AU </a>
-
-            </div>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
-
-
-    <!-- SCRIPTS -->
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.js"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
-    
-    <script>
-    new WOW().init();
-    </script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            main {
+                padding-top: 3rem;
+                padding-bottom: 2rem;
             }
-        }
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("#signin").click(function(){
-                $("#myModalSignIn").modal();
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("#registration").click(function(){
-                $("#myModalReg").modal();
-            });
-        });
-    </script>
+            
+            .widget-wrapper {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #e0e0e0;
+                margin-bottom: 2rem;
+            }
+            
+            .extra-margins {
+                margin-top: 1rem;
+                margin-bottom: 2.5rem;
+            }
+            
+            .divider-new {
+                margin-top: 0;
+            }
+            
+              .navbar {
+                background-color: #343c4b;
+            }
+            
+            footer.page-footer {
+                background-color: #343c4b;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--Navbar-->
+            <?php require 'function_navbar.php';?>
+        </header>
+        <main>
+            <!--Main layout-->
+            <div class="container">
+                <div class="row">
+                <!--SideBar-->
+                <?php require 'function_sidebar.php';?>
+                    <div class="col-lg-8">
+                        <div class="row wow fadeIn" data-wow-delay="0.4s">
+                            <div class="col-lg-12">
+                                <div class="divider-new">
+                                    <h2 class="h2-responsive">What's new?</h2>
+                                </div>
+                                <?php require 'function_carousel.php';?>
+                            </div>
+                        </div>
+                        <br>
+                        <hr class="extra-margins">
+                        <div class="row">
+                            <!--Article Tiles-->  
+                            <?php require 'function_articles.php';?>
+                        </div>
 
-
-</body>
-
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Signin-->
+            <?php require 'function_modal_signin.php';?>
+            <!-- Modal Registration-->
+            <?php require 'function_modal_registration.php';?>
+        </main>
+        <footer class="page-footer center-on-small-only">
+            <?php require 'function_footer.php';?>
+        </footer>
+        <!--JavaScript Scripts-->
+        <?php require 'scripts_code.php';?>
+    </body>
 </html>
-
-<?php
-$con = mysqli_connect("localhost","root","") or die("not connected");
-mysqli_select_db($con, "property_site") or die("no db found");
-
-if(isset($_POST['submit'])){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $phoneNum = $_POST['phoneNum'];
-    $pwd = $_POST['pwd'];
-    $priv = $_POST['priv'];
-
-    $query = "INSERT INTO user_prof (fname,lname,email,phoneNum,pwd,priv) VALUES ('$fname','$lname','$email','$phoneNum','$pwd','$priv')";
-    if(mysqli_query($con,$query)){
-        echo "data submitted";
-    }
-    else {
-        echo "data gone AWOL!!";
-    }
-}
-?>
+<!--Registration Form Database Link-->
+<?php require 'database_registration_connect.php';?>
