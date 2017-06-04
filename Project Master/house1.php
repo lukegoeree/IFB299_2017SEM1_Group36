@@ -60,13 +60,13 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="img/logo/site_logo.jpg" width="300" height="100" alt="Site Logo">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav1">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                            <a href="index.php" class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="signin">Sign In</a>
@@ -95,40 +95,48 @@
 					<div class="house1">
 						<h1>Available for Rent Now!</h1>
 						</br>
-						<img src="img/homes/home4.jpg" class="hoverable" width="800" height="600" />
+						<img src="img/homes/home1.jpg" class="hoverable" width="800" height="600" />
 						
                             <div class ="row">
 								<div class="col-lg-1">
 									<img src="img/icons/car_icon.png" width = "20" height="20" />
-									<h5> 3 </h5>
+									<h5> 1 </h5>
 								</div>
 								<div class="col-lg-1">
 									<img src="img/icons/bed_icon.png" width = "20" height="20" />
-									<h5> 5 </h5>
+									<h5> 2 </h5>
 								</div>
 								<div class="col-lg-1">
 									<img src="img/icons/shower_icon.png" width = "20" height="20" />
-									<h5> 3 </h5>
+									<h5> 4 </h5>
 								</div>
 							</div>
 
-						<h3>$1,100 per week </h3>	
+						<h3>$450 per week </h3>	
                         </br>
-                        <p>This beautiful waterfront home is located in the world class golfing estate of Brisbane and offers very spacious family living.</p>
-						<p>Upstairs comprises of master bedroom with full ensuite including a freestanding bath, 3 other generous sized bedrooms, central bathroom with separate powder room, large sitting area or second lounge room & balcony overlooking the pool area & the canal.</p>
-						<p>Downstairs is complete with another master bedroom at the front of the property with ensuite, powder room, separate media room, open plan living/dining area, kitchen with butlers pantry overlooking the sparkling pool and waterway.</p>
+                        <p>This much loved home is ready for a new family to add their personal touch!</p>
+                        <p>Here's your opportunity to move into Brisbanes best suburb.</p>		
+                        </br>
+                        <p> The leafy streets, excellent schools and central location are all the reasons</p>
+                        <p> this suburb is highly sought after.</p>
+                        </br>
+                        <p> This four bedroom two story home is ideal for those seeking convenient living in a</p>
+                        <p>family frindly location.</p>
+                        <p> Situated on the high side of the sreet with a lovely northerly aspect,</p>
+                        <p>this well proportioned residence has been freshly painted throughout and includes</p>
+                        <p> spacious living areas, large updated bathroom, hardwood flooring and lock up garage!</p>
                         </br>
                         </br>
                         <p> Features: </p>
-                        <li> Large Master upstairs with fabulous walk in robe and en-suite </li>
-                        <li> En-suite has freestanding bath, dual vanities and rain head shower </li>
-                        <li> Large Master downstairs complete with robe & ensuite </li>
-                        <li> 3 more bedrooms are upstairs all complete with ceiling fans & robes </li>
-                        <li> Centralised bathroom with separate powder room. </li>
-                        <li> Gourmet kitchen with 5 burner gas cook top and SMEG appliances </li>
+                        <li> Two story timber cladding </li>
+                        <li> 4 Solar Panels </li>
+                        <li> Fresh painting throughout interior </li>
+                        <li> Tinted window film to most living area windows </li>
+                        <li> Spacious lounge and dining </li>
+                        <li> Outside entertaining area </li>
                         </br>
-                        <p> This area offers real community living with many choices of dining and entertaining within easy walking distance</p>
-                        			
+                        <p> Within close proximity to Brisbanes best educational facilities, easy access to parks</p>
+                        <p> and entertainment district </p>			
 					</div>
                     <!--/.First row-->
                     <br>
@@ -167,48 +175,59 @@
         <!--End Modal-->
 
          <!-- Modal Register-->
-        <div class="modal fade" id="myModalReg" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>REGISTRATION</h4>             
-                    </div>
-                    <!--End Modal Header-->
+        <form action="index.php" method="post">
+            <div class="modal fade" id="myModalReg" role="dialog">
+            
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>REGISTRATION</h4>             
+                        </div>
+                        <!--End Modal Header-->
 
-                    <div class="modal-body">
-                        <form role="form">
-                            <!--First Name-->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="fNameEntry" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="sNameEntry" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="emailEntry" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" id="contactNoEntry" placeholder="Contact Number">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="passwordEntry" placeholder="Enter Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
-                            </div>
-                            <button type="submit" class="btn btn-default btn-block">Register</button>
-                        </form>
+                        <div class="modal-body">
+                            <form role="form">
+                                <!--First Name-->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fNameEntry" name="fname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="sNameEntry" name="lname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="emailEntry" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="contactNoEntry" name="phoneNum" placeholder="Contact Number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="passwordEntry" name="pwd" placeholder="Enter Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="priv" id="custTypeRenter" value="1" checked="checked"> Renter
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="priv" id="custTypeOwner" value="2"> Property Owner
+                                </div>
+                                <button type="submit" class="btn btn-default btn-block" name="submit" value="submit">Register</button>
+                            </form>
+                        </div>
+                        <!--End Modal Body-->
                     </div>
-                    <!--End Modal Body-->
+                    <!--End Modal Content-->
                 </div>
-                <!--End Modal Content-->
+                <!--End Modal Dialog-->
+                
             </div>
-            <!--End Modal Dialog-->
-        </div>
-        <!--End Modal-->
+            <!--End Modal-->
+        </form>
+
     </main>
 
     <!--Footer-->
@@ -305,7 +324,7 @@
     <script>
     new WOW().init();
     </script>
-    <script>
+        <script>
         // Get the modal
         var modal = document.getElementById('id01');
 
@@ -330,6 +349,29 @@
             });
         });
     </script>
+
 </body>
 
 </html>
+
+<?php
+$con = mysqli_connect("localhost","root","") or die("not connected");
+mysqli_select_db($con, "property_site") or die("no db found");
+
+if(isset($_POST['submit'])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $phoneNum = $_POST['phoneNum'];
+    $pwd = $_POST['pwd'];
+    $priv = $_POST['priv'];
+
+    $query = "INSERT INTO user_prof (fname,lname,email,phoneNum,pwd,priv) VALUES ('$fname','$lname','$email','$phoneNum','$pwd','$priv')";
+    if(mysqli_query($con,$query)){
+        echo "data submitted";
+    }
+    else {
+        echo "data gone AWOL!!";
+    }
+}
+?>

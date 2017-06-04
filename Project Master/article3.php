@@ -60,13 +60,13 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img src="img/logo/site_logo.jpg" width="300" height="100" alt="Site Logo">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav1">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="signin">Sign In</a>
@@ -140,7 +140,7 @@
 						<i>Mar 23, 2016 7:09PM</i></br>
 						<p><i>Reference from:</i>
 						<a href="http://www.news.com.au/finance/real-estate/buying/property-market-improving-in-brisbane/news-story/e62aa3750f9c18718302fb4ce2a399b4" target="_blank">www.news.com.au</a></p>
-						<a href="article3.html"> <img src="img/articles/article3.jpg" alt="Article" heigh "400" width="400"></a>
+						<a href="article3.php"> <img src="img/articles/article3.jpg" alt="Article" heigh "400" width="400"></a>
 						<p><b>NOW is a really good time to live in Brisbane.</b></p>
 						<p>It’s an even better time to own a house in Brisbane as it has just been dubbed the most stable city in Australia.</p>
 						<p>Brisbane’s average house prices have climbed again for its 14th quarter in a row.</p>
@@ -184,7 +184,7 @@
                                 <!--Card image-->
                                 <div class="view overlay hm-white-slight">
                                     <img src="img/homes/article1.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article1.html">
+                                    <a href="article1.php">
                                         <div class="mask"></div>
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@
                                     <!--Text-->
                                     <p class="card-text">House prices are predicted to rise in 29 Brisbane suburbs, with a surprising one-third coming out of one area alone.</p>
                                     <!-- .btn-default { line 5342 mdb.css -->
-                                    <a href="article1.html" class="btn btn-default"><strong>READ NOW!</strong></a>
+                                    <a href="article1.php" class="btn btn-default"><strong>READ NOW!</strong></a>
                                 </div>
                                 <!--/.Card content-->
 
@@ -214,7 +214,7 @@
                                 <!--Card image-->
                                 <div class="view overlay hm-white-slight">
                                     <img src="img/homes/article2.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article2.html">
+                                    <a href="article2.php">
                                         <div class="mask"></div>
                                     </a>
                                 </div>
@@ -226,7 +226,7 @@
                                     <h4 class="card-title">Brisbane house and unit prices tipped to go in opposite directions in 2017</h4>
                                     <!--Text-->
                                     <p class="card-text">The Brisbane housing market is expected to grow steadily in 2017, outperforming other capital cities hit hard by the drop in the national economy.</p>
-                                    <a href="article2.html" class="btn btn-default"><strong>READ NOW!</strong></a>
+                                    <a href="article2.php" class="btn btn-default"><strong>READ NOW!</strong></a>
                                 </div>
                                 <!--/.Card content-->
 
@@ -243,7 +243,7 @@
                                 <!--Card image-->
                                 <div class="view overlay hm-white-slight">
                                     <img src="img/homes/article3.jpg" class="img-fluid" width="700" height="500" alt="">
-                                    <a href="article3.html">
+                                    <a href="article3.php">
                                         <div class="mask"></div>
                                     </a>
                                 </div>
@@ -255,7 +255,7 @@
                                     <h4 class="card-title">Property market improving in Brisbane</h4>
                                     <!--Text-->
                                     <p class="card-text">It’s an even better time to own a house in Brisbane as it has just been dubbed the most stable city in Australia.</p>
-                                    <a href="article3.html" class="btn btn-default"><strong>READ NOW!</strong></a>
+                                    <a href="article3.php" class="btn btn-default"><strong>READ NOW!</strong></a>
                                 </div>
                                 <!--/.Card content-->
 
@@ -304,48 +304,58 @@
         <!--End Modal-->
 
          <!-- Modal Register-->
-        <div class="modal fade" id="myModalReg" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>REGISTRATION</h4>             
-                    </div>
-                    <!--End Modal Header-->
+        <form action="index.php" method="post">
+            <div class="modal fade" id="myModalReg" role="dialog">
+            
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>REGISTRATION</h4>             
+                        </div>
+                        <!--End Modal Header-->
 
-                    <div class="modal-body">
-                        <form role="form">
-                            <!--First Name-->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="fNameEntry" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="sNameEntry" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="emailEntry" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" id="contactNoEntry" placeholder="Contact Number">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="passwordEntry" placeholder="Enter Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
-                            </div>
-                            <button type="submit" class="btn btn-default btn-block">Register</button>
-                        </form>
+                        <div class="modal-body">
+                            <form role="form">
+                                <!--First Name-->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fNameEntry" name="fname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="sNameEntry" name="lname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="emailEntry" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="contactNoEntry" name="phoneNum" placeholder="Contact Number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="passwordEntry" name="pwd" placeholder="Enter Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="priv" id="custTypeRenter" value="1" checked="checked"> Renter
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="priv" id="custTypeOwner" value="2"> Property Owner
+                                </div>
+                                <button type="submit" class="btn btn-default btn-block" name="submit" value="submit">Register</button>
+                            </form>
+                        </div>
+                        <!--End Modal Body-->
                     </div>
-                    <!--End Modal Body-->
+                    <!--End Modal Content-->
                 </div>
-                <!--End Modal Content-->
+                <!--End Modal Dialog-->
+                
             </div>
-            <!--End Modal Dialog-->
-        </div>
-        <!--End Modal-->
+            <!--End Modal-->
+        </form>
 
     </main>
 
@@ -471,3 +481,25 @@
 </body>
 
 </html>
+
+<?php
+$con = mysqli_connect("localhost","root","") or die("not connected");
+mysqli_select_db($con, "property_site") or die("no db found");
+
+if(isset($_POST['submit'])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $phoneNum = $_POST['phoneNum'];
+    $pwd = $_POST['pwd'];
+    $priv = $_POST['priv'];
+
+    $query = "INSERT INTO user_prof (fname,lname,email,phoneNum,pwd,priv) VALUES ('$fname','$lname','$email','$phoneNum','$pwd','$priv')";
+    if(mysqli_query($con,$query)){
+        echo "data submitted";
+    }
+    else {
+        echo "data gone AWOL!!";
+    }
+}
+?>
