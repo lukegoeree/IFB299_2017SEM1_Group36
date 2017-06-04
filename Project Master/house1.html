@@ -72,7 +72,7 @@
                             <a class="nav-link" id="signin">Sign In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Register</a>
+                            <a class="nav-link" id="registration">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -144,8 +144,8 @@
 
         </div>
         <!--/.Main layout-->
-         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+         <!-- Modal Login-->
+        <div class="modal fade" id="myModalSignIn" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -156,16 +156,58 @@
                     <div class="modal-body">
                         <form role="form">
                             <div class="form-group">
-                                <label for="usrname">Username:</label>
-                                <input type="text" class="form-control" id="usrname" placeholder="Enter Email">
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Username">
                             </div>
                             <!--Username-->
                             <div class="form-group">
-                                <label for="usrname">Password:</label>
                                 <input type="password" class="form-control" id="psw" placeholder="Enter Password">
                             </div>
                             <!--Password-->
                             <button type="submit" class="btn btn-default btn-block">Login</button>
+                        </form>
+                    </div>
+                    <!--End Modal Body-->
+                </div>
+                <!--End Modal Content-->
+            </div>
+            <!--End Modal Dialog-->
+        </div>
+        <!--End Modal-->
+
+         <!-- Modal Register-->
+        <div class="modal fade" id="myModalReg" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>REGISTRATION</h4>             
+                    </div>
+                    <!--End Modal Header-->
+
+                    <div class="modal-body">
+                        <form role="form">
+                            <!--First Name-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fNameEntry" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="sNameEntry" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="emailEntry" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="confEmailEntry" placeholder="Confirm Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="contactNoEntry" placeholder="Contact Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passwordEntry" placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="confPasswordEntry" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Register</button>
                         </form>
                     </div>
                     <!--End Modal Body-->
@@ -285,7 +327,14 @@
     <script>
         $(document).ready(function(){
             $("#signin").click(function(){
-                $("#myModal").modal();
+                $("#myModalSignIn").modal();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#registration").click(function(){
+                $("#myModalReg").modal();
             });
         });
     </script>
