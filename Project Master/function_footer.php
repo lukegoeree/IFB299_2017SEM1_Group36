@@ -63,7 +63,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2017 Copyright: <a href="#"> WWW.FINDACASTLE.COM.AU </a>
+                © 2017 Copyright: <a href="index.php"> WWW.FINDACASTLE.COM.AU </a>
 
             </div>
         </div>

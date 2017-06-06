@@ -12,9 +12,6 @@
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="search">Search</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" id="signin">Sign In</a>
                 </li>
                 <li class="nav-item">

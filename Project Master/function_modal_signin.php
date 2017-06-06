@@ -10,7 +10,7 @@
             <div class="modal-body">
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="usrname" placeholder="Enter Username">
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter Email">
                     </div>
                     <!--Username-->
                     <div class="form-group">

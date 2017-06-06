@@ -7,11 +7,11 @@
         <div class="list-group">
         <!-- .list-group-item  line 5143 -->
         <!-- .list-group-item.active line 5191 -->
-            <a href="#" class="list-group-item active">Renting</a>
+            <a href="ownercontact.php" class="list-group-item active">Property Managers</a>
+            <a href="#" class="list-group-item">Renting</a>
             <a href="#" class="list-group-item">Buying</a>
             <a href="#" class="list-group-item">Selling</a>
             <a href="#" class="list-group-item">News</a>
-            <a href="#" class="list-group-item">Corporate</a>
         </div>
     </div>
 

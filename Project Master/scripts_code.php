@@ -39,10 +39,3 @@ new WOW().init();
         });
     });
 </script>
-<script>
-    $(document).ready(function(){
-        $("#search").click(function(){
-            $("#myModalSearch").modal();
-        });
-    });
-</script>
